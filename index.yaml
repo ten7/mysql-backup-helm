@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  mysql-backup:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-29T19:58:15.3572794Z"
+    description: A Helm chart to backup MySQL or MariaDB databases to a bucket or
+      SFTP server.
+    digest: 7f811a657d3afd6b36393561e3597259d492c63472e1888ab11592ebfc571772
+    name: mysql-backup
+    type: application
+    urls:
+    - https://ten7.github.io/mysql-backup-helm/mysql-backup-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-09-29T19:58:15.355594828Z"
