@@ -1,0 +1,7 @@
+1. You an inspect the cronjob using the following command:
+
+   kubectl --namespace {{ .Release.Namespace }} get cronjob {{ include "mysql_backup.fullname" . }}
+
+2. If you want to run the backup manually, do the following:
+
+   kubectl --namespace {{ .Release.Namespace }} create job --from=cronjob/{{ include "mysql_backup.fullname" . }} manual-mysql_backup

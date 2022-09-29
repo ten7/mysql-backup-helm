@@ -1,0 +1,7 @@
+apiVersion: v2
+name: mysql-backup
+description: A Helm chart to backup MySQL or MariaDB databases to a bucket or SFTP server.
+type: application
+version: 1.0.0
+appVersion: 1.0.0
+
