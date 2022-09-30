@@ -38,12 +38,12 @@ spec:
             command:
               - "bin/bash"
               - "-c"
-              - "s3-backup"
+              - "mysql-backup"
             resources:
               {{- toYaml .Values.resources | nindent 14 }}
             volumeMounts:
               - name: config
-                mountPath: /config/s3-backup
+                mountPath: /config/mysql-backup
               {{- if .Values.extraVolumeMounts }}
               {{- toYaml .Values.extraVolumeMounts | nindent 14 }}
               {{- end }}
